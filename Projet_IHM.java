@@ -42,17 +42,17 @@ public class Projet_IHM extends Application {
     VBox trashBoxesBox;
     VBox colorButtonsBox;
     VBox greyButtonsBox;
-    Image plusColor = new Image(getClass().getResourceAsStream("plus.png"));
+    Image plusColor = new Image(getClass().getResourceAsStream("ressources/plus.png"));
     ImageView plusIV;
     VBox addColor;
     Label addColorLabel;
     Color selectedColor;
     HBox selectorItself;
     Label copied;
-    Image selector = new Image(getClass().getResourceAsStream("upload.png"));
+    Image selector = new Image(getClass().getResourceAsStream("ressources/upload.png"));
     ImageView selectorImageView;
     int nbColors=0;
-    Image image = new Image(getClass().getResourceAsStream("trashbox.png"));
+    Image image = new Image(getClass().getResourceAsStream("ressources/trashbox.png"));
     final Clipboard clipboard = Clipboard.getSystemClipboard();
     final ClipboardContent content = new ClipboardContent();
 
@@ -211,7 +211,7 @@ public class Projet_IHM extends Application {
  
         Scene scene = new Scene(root, 1200, 900);
         //stage.getIcons().add(new Image("file:/home/infoetu/vanrobah/eclipse-workspace/ihm/src/main/java/IHM/ihm/trashbox.png"));
-        stage.setTitle("colorPicker test");
+        stage.setTitle("Projet IHM");
  
         stage.setScene(scene);
         stage.show();
